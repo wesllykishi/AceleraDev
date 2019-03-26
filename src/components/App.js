@@ -34,7 +34,7 @@ class App extends Component {
         if (array !== null) {
             return (
               array.map((value,index) =>
-              value != mark?value:<mark key={index}>{mark}</mark>)
+              value !== mark?value:<mark key={index}>{mark}</mark>)
             );
         }
     }
